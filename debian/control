@@ -1,12 +1,33 @@
 Source: device-overo
-Section: unknown
+Section: embedded
 Priority: extra
-Maintainer: unknown <bgat@mercury.billgatliff.com>
+Maintainer: Bill Gatliff <bgat@billgatliff.com>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.3
 
 Package: device-overo
 Architecture: all
-Depends: ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Root package for the Gumstix Overo COM
+ This is the root package for the Gumstix Overo Computer-on-Module.
+ It defines the most generic, plain-vanilla functional configuration.
+Depends:
+ board-overo,
+ baseconfig-ptux,
+ firmware-overo,
+ linux-overo,
+ ptux-essential,
+ systemd-sysv,
+ dpkg-autoconfigure-at-boot,
+ vim-tiny,
+ procps,
+ wget,
+ module-init-tools,
+ accounts-root-password,
+ connman-run,
+ openssh-client,
+ openssh-server,
+ iproute,
+ iputils-ping,
+ apt-transport-https,
+ apt-source-ptux-device,
+ ${misc:Depends}
