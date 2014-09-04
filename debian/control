@@ -13,8 +13,6 @@ Description: Root package for the Gumstix Overo COM
 Depends:
  board-overo,
  baseconfig-ptux,
- firmware-overo,
- linux-overo,
  ptux-essential,
  systemd-sysv,
  dpkg-autoconfigure-at-boot,
