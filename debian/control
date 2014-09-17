@@ -11,6 +11,7 @@ Description: Root package for the Beaglebone Black target
  This is the root package for the Beaglebone Black target.
  It defines the most generic, plain-vanilla functional configuration.
 Depends:
+ dtb-boneblack,
  board-boneblack,
  baseconfig-ptux,
  ptux-essential,
