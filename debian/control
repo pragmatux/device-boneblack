@@ -13,7 +13,7 @@ Description: Root package for the Beaglebone Black target
 Depends:
  board-boneblack,
  dtb-boneblack,
- bootscr-omap3,
+ bootscr-am335x,
  mount-mmcblk0p1-as-boot,
  baseconfig-ptux,
  ptux-essential,
