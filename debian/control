@@ -30,4 +30,5 @@ Depends:
  iputils-ping,
  apt-transport-https,
  apt-source-ptux-device,
+ avahi-daemon,
  ${misc:Depends}
