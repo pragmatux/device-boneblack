@@ -31,4 +31,8 @@ Depends:
  apt-transport-https,
  apt-source-ptux-device,
  avahi-daemon,
+ usbutils,
+ iw,
+ wireless-tools,
+ firmware-realtek,
  ${misc:Depends}
