@@ -7,6 +7,7 @@ Standards-Version: 3.9.3
 
 Package: device-boneblack
 Architecture: all
+Multi-Arch: foreign
 Description: Root package for the Beaglebone Black target
  This is the root package for the Beaglebone Black target.
  It defines the most generic, plain-vanilla functional configuration.
