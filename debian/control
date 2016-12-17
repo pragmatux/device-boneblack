@@ -38,3 +38,37 @@ Depends:
  wireless-tools,
  firmware-realtek,
  ${misc:Depends}
+
+Package: device-boneblackwireless
+Architecture: all
+Multi-Arch: foreign
+Description: Root package for the Beaglebone Black Wireless target
+ This is the root package for the Beaglebone Black Wireless target.
+ It defines the most generic, plain-vanilla functional configuration.
+Depends:
+ default-root-sshkey-device,
+ board-boneblackwireless,
+ bootscr-am335x,
+ dtb-boneblackwireless,
+ baseconfig-ptux,
+ ptux-essential,
+ systemd-sysv,
+ dpkg-autoconfigure-at-boot,
+ vim-tiny,
+ procps,
+ wget,
+ module-init-tools,
+ accounts-root-password,
+ connman-run,
+ openssh-client,
+ openssh-server,
+ iproute,
+ iputils-ping,
+ apt-transport-https,
+ apt-source-ptux-device,
+ avahi-daemon,
+ usbutils,
+ iw,
+ wireless-tools,
+ firmware-realtek,
+ ${misc:Depends}
