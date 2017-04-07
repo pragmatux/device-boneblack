@@ -24,7 +24,7 @@ Depends:
  vim-tiny,
  procps,
  wget,
- module-init-tools,
+ module-init-tools | kmod,
  accounts-root-password,
  connman-run,
  openssh-client,
