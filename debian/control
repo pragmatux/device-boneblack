@@ -1,9 +1,9 @@
 Source: device-boneblack
 Section: embedded
-Priority: extra
+Priority: optional
 Maintainer: Bill Gatliff <bgat@billgatliff.com>
-Build-Depends: debhelper (>= 8.0.0)
-Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 10.0.0)
+Standards-Version: 4.3.0
 Vcs-Git: https://github.com/bgat/device-boneblack.git
 
 Package: device-boneblack
