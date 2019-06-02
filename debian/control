@@ -6,17 +6,16 @@ Build-Depends: debhelper (>= 10.0.0)
 Standards-Version: 4.3.0
 Vcs-Git: https://github.com/bgat/device-boneblack.git
 
-Package: device-boneblack
+Package: device-beaglebone
 Architecture: all
 Multi-Arch: foreign
-Description: Root package for Beaglebone Black
- This is the root package for the Beaglebone Black target.
- It defines the most generic, plain-vanilla functional configuration.
+Description: Root package for all Beaglebone-based devices
+ This is the root package for all Beaglebone-based devices.
+ It defines the most generic, plain-vanilla functional configuration
+ common to all devices common to the Beaglebone family.
 Depends:
  default-root-sshkey-device,
- board-boneblack,
  bootscr-am335x,
- dtb-boneblack,
  baseconfig-ptux,
  ptux-essential,
  systemd-sysv,
@@ -29,7 +28,7 @@ Depends:
  connman-run,
  openssh-client,
  openssh-server,
- iproute,
+ iproute2,
  iputils-ping,
  apt-transport-https,
  apt-source-ptux-device,
@@ -40,6 +39,19 @@ Depends:
  firmware-realtek,
  ${misc:Depends}
 
+
+Package: device-boneblack
+Architecture: all
+Multi-Arch: foreign
+Description: Root package for Beaglebone Black
+ This is the root package for the Beaglebone Black target.
+ It defines the most generic, plain-vanilla functional configuration.
+Depends:
+ device-beaglebone,
+ board-boneblack,
+ dtb-boneblack,
+ ${misc:Depends}
+
 Package: device-boneblackwireless
 Architecture: all
 Multi-Arch: foreign
@@ -47,31 +59,9 @@ Description: Root package for Beaglebone Black Wireless
  This is the root package for the Beaglebone Black Wireless target.
  It defines the most generic, plain-vanilla functional configuration.
 Depends:
- default-root-sshkey-device,
+ device-beaglebone,
  board-boneblackwireless,
- bootscr-am335x,
  dtb-boneblackwireless,
- baseconfig-ptux,
- ptux-essential,
- systemd-sysv,
- dpkg-autoconfigure-at-boot,
- vim-tiny,
- procps,
- wget,
- module-init-tools,
- accounts-root-password,
- connman-run,
- openssh-client,
- openssh-server,
- iproute,
- iputils-ping,
- apt-transport-https,
- apt-source-ptux-device,
- avahi-daemon,
- usbutils,
- iw,
- wireless-tools,
- firmware-realtek,
  ${misc:Depends}
 
 
@@ -82,31 +72,9 @@ Description: Root package for Beaglebone Green
  This is the root package for the Beaglebone Green target.
  It defines the most generic, plain-vanilla functional configuration.
 Depends:
- default-root-sshkey-device,
+ device-beaglebone,
  board-bonegreen,
- bootscr-am335x,
  dtb-bonegreen,
- baseconfig-ptux,
- ptux-essential,
- systemd-sysv,
- dpkg-autoconfigure-at-boot,
- vim-tiny,
- procps,
- wget,
- module-init-tools,
- accounts-root-password,
- connman-run,
- openssh-client,
- openssh-server,
- iproute,
- iputils-ping,
- apt-transport-https,
- apt-source-ptux-device,
- avahi-daemon,
- usbutils,
- iw,
- wireless-tools,
- firmware-realtek,
  ${misc:Depends}
 
 Package: device-bonegreenwireless
@@ -116,29 +84,19 @@ Description: Root package for Beaglebone Green Wireless
  This is the root package for the Beaglebone Green Wireless target.
  It defines the most generic, plain-vanilla functional configuration.
 Depends:
- default-root-sshkey-device,
+ device-beaglebone,
  board-bonegreenwireless,
- bootscr-am335x,
  dtb-bonegreenwireless,
- baseconfig-ptux,
- ptux-essential,
- systemd-sysv,
- dpkg-autoconfigure-at-boot,
- vim-tiny,
- procps,
- wget,
- module-init-tools,
- accounts-root-password,
- connman-run,
- openssh-client,
- openssh-server,
- iproute,
- iputils-ping,
- apt-transport-https,
- apt-source-ptux-device,
- avahi-daemon,
- usbutils,
- iw,
- wireless-tools,
- firmware-realtek,
+ ${misc:Depends}
+
+Package: device-boneblue
+Architecture: all
+Multi-Arch: foreign
+Description: Root package for Beaglebone Blue
+ This is the root package for the Beaglebone Blue target.
+ It defines the most generic, plain-vanilla functional configuration.
+Depends:
+ device-beaglebone,
+ board-boneblue,
+ dtb-boneblue,
  ${misc:Depends}
